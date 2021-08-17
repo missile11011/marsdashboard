@@ -15,3 +15,6 @@ function getPhotos(rover,camera){
         image.src=imageBlob.photos[i].img_src
     });
 }
+
+<button onclick="getElementById('photos').innerHTML()">Click me</button>
+
