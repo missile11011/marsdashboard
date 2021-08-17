@@ -18,6 +18,7 @@ header{
     justify-content: center;
     background-color: #1c5274;
     border-radius: 20px;
+    
 }
 
 header h1 {
@@ -88,4 +89,5 @@ section {
 
 footer {
     text-align: center;
+    color: white;
 }
