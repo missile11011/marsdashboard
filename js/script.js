@@ -15,3 +15,11 @@ function getPhotos(rover,camera){
         image.src=imageBlob.photos[i].img_src
     });
 }
+
+document.getElementById("photos").addEventListener("click", (e)=>{
+    getPhotos("curiosity", "chemcam")
+})
+
+
+
+
