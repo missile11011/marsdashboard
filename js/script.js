@@ -16,5 +16,10 @@ function getPhotos(rover,camera){
     });
 }
 
-<button onclick="getElementById('photos').innerHTML()">Click me</button>
+document.getElementById("photos").addEventListener("click", (e)=>{
+    getPhotos("curiosity", "chemcam")
+})
+
+
+
 
