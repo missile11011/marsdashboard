@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <h1>NASA<span class="nas">Fact</h1>
-            <nav id="nav-bar"> 
-                <ul>
-                    <li>
-                     <a href="#Weather">Weather</a>
-                    </li>
-                    <li>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a href="#Weather">Weather</a>
+                </li>
+                <li>
                     <a href="#Mission Manifest">Mission Manifest</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="#Photos">Photos</a>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+            </ul>
+        </nav>
     </header>
 
- <br>
+    <br>
 
     <article id="main-container" class="container">
+        <section>
+            <h3>Astronomy Picture Of The Day</h3>
+            <h4 id="title"></h4>
+            <img id="spaceImg" src="" alt="" class="img-fluid">
+            <p id="spaceDscr"></p>
+        </section>
         <section class="flex-container" id="Mission Manifest">
             <h3>Mission Manifest</h3>
-            <p> The goal of the Mars Exploration Program is to explore Mars and to provide a continuous flow of scientific information and discovery through a carefully selected series of robotic orbiters, landers and mobile laboratories interconnected by a high-bandwidth Mars/Earth communication network.</p>
+            <p> The goal of the Mars Exploration Program is to explore Mars and to provide a continuous flow of
+                scientific information and discovery through a carefully selected series of robotic orbiters, landers
+                and mobile laboratories interconnected by a high-bandwidth Mars/Earth communication network.</p>
         </section>
-        <section class="flex-container">
+        <section class="">
             <h3>Photos</h3>
             <img id="image">
-            <p> The photos used in this section were taken from the rovers (Curiosity, Opportunity and Spirit) that are currently on Mars. Some of the pictures that could be seen include shots from the 'Mast Camera', 'Navigation Camera', 'Panoramic Camera', 'Mars Descent Imager' and 'Mars Hand Lens Imager'. </p>
+            <p> The photos used in this section were taken from the rovers (Curiosity, Opportunity and Spirit) that are
+                currently on Mars. Some of the pictures that could be seen include shots from the 'Mast Camera',
+                'Navigation Camera', 'Panoramic Camera', 'Mars Descent Imager' and 'Mars Hand Lens Imager'. </p>
             <button type="button" id="photos" class="btn btn-primary btn-lg">Camera</button>
         </section>
     </article>
-    
+
     <footer>
         <div class="container">
             Copyright &copy; Joseph, Misael, Zack 🌙
@@ -48,4 +62,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
