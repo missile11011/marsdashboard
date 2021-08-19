@@ -75,7 +75,7 @@ p {
 section {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
     font-family: 'Righteous', cursive;
     background-color: #1c5274;
     color: rgba(0, 0, 0, 0.842);
@@ -101,6 +101,8 @@ footer {
     display: block;
     margin-right:auto;
     margin-left:auto;
+    height: auto;
+    width: 75%;
 }
 #title{
     text-align: center
