@@ -92,4 +92,16 @@ footer {
     color: white;
     font-family: 'Righteous', cursive;
 }
-
+#spaceImg{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+}
+#image{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+}
+#title{
+    text-align: center
+}
