@@ -100,6 +100,8 @@ footer {
     display: block;
     margin-right:auto;
     margin-left:auto;
+    height: auto;
+    width: 75%;
 }
 #title{
     text-align: center
