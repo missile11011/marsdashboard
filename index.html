@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 
@@ -51,6 +54,24 @@
             <p> The photos used in this section were taken from the rovers (Curiosity, Opportunity and Spirit) that are
                 currently on Mars. Some of the pictures that could be seen include shots from the 'Mast Camera',
                 'Navigation Camera', 'Panoramic Camera', 'Mars Descent Imager' and 'Mars Hand Lens Imager'. </p>
+            <select id="rover" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Rovers</option>
+                <option value="curiosity">Curiosity</option>
+                <option value="opportunity">Opportunity</option>
+                <option value="spirit">Spirit</option>
+            </select>
+            <select id="camera"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Camera</option>
+                <option value="fhaz">Front Hazard Avoidance Camera</option>
+                <option value="rhaz">Rear Hazard Avoidance Camera</option>
+                <option value="mast">Mast Camera</option>
+                <option value="chemcam">Chemistry and Camera Complex</option>
+                <option value="mahli">Mars Hand Lens Imager</option>
+                <option value="MARDI">Mars Descent Imager</option>
+                <option value="navcam">Navigation Camera</option>
+                <option value="pancam">Panoramic Camera</option>
+                <option value="minites">Miniature Thermal Emission Spectrometer (Mini-TES)</option>
+            </select>
             <button type="button" id="photos" class="btn btn-primary btn-lg">Camera</button>
         </section>
     </article>
