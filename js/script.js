@@ -28,7 +28,8 @@ function spaceimage(){
     .then(response => response.json())
     .then(data => {
         document.getElementById("spaceImg").src = data.url;
-        console.log(data)
+        document.getElementById("spaceDscr").textContent = data.explanation
+        document.getElementById("title").textContent = data.title
     })
 }
 

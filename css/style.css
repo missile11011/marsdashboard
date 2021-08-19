@@ -75,7 +75,7 @@ p {
 section {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
     font-family: fantasy;
     background-color: #1c5274;
     color: rgba(0, 0, 0, 0.842);
@@ -90,4 +90,17 @@ section {
 footer {
     text-align: center;
     color: white;
+}
+#spaceImg{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+}
+#image{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+}
+#title{
+    text-align: center
 }
