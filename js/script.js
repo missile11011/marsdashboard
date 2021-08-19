@@ -2,19 +2,21 @@ let image = document.getElementById("image")
 let apikey = "dLsK5GbW63DisyWiTiwBNvOBP9tZSyHbghV9wOnL"
 
 
-function getPhotos(rover,camera){
-    const imageUrl = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=1000&camera=${camera}&api_key=${apikey}`
+function getPhotos(camera){
+    const imageUrl = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=${camera}&api_key=${apikey}`
     fetch(imageUrl)
     .then(response => response.json())
     .then(imageBlob => {
+    console.log(imageBlob)
     let i =Math.floor(Math.random()*imageBlob.photos.length)
         image.src=imageBlob.photos[i].img_src
+        document.getElementById("length").textContent = imageBlob.photos.length
     });
 }
 
 document.getElementById("photos").addEventListener("click", (e)=>{
     let camera = document.getElementById("camera").value
-    getPhotos("curiosity", camera)
+    getPhotos(camera)
 })
 
 
