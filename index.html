@@ -52,7 +52,19 @@
             <p> The photos used in this section were taken from the rovers (Curiosity, Opportunity and Spirit) that are
                 currently on Mars. Some of the pictures that could be seen include shots from the 'Mast Camera',
                 'Navigation Camera', 'Panoramic Camera', 'Mars Descent Imager' and 'Mars Hand Lens Imager'. </p>
+            <select id="camera"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Camera</option>
+                <option value="fhaz">Front Hazard Avoidance Camera</option>
+                <option value="rhaz">Rear Hazard Avoidance Camera</option>
+                <option value="mast">Mast Camera</option>
+                <option value="chemcam">Chemistry and Camera Complex</option>
+                <option value="navcam">Navigation Camera</option>
+            </select>
             <button type="button" id="photos" class="btn btn-primary btn-lg">Camera</button>
+            <p class="photoIns">Choose a number to show you that specific image</p>
+            <input id="photoNum" type="text" class="col-1" placeholder="0" aria-label="First name">
+            <p id="length"></p>
+
         </section>
     </article>
 
